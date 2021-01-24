@@ -98,7 +98,7 @@ def main_page():
 
     # display description
     description = description_font.render("A game designed to help high school students prepare for the College Board’s SAT", True, (255, 255, 255))
-    screen.blit(description, (100, 170))
+    screen.blit(description, (84, 170))
     #screen.blit(description, (100, 260))
     description2 = description_font.render("Reading Section by playing a modified version of Space Invaders (1978) to", True, (255, 255, 255))
     screen.blit(description2, (125, 190))
