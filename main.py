@@ -14,8 +14,8 @@ screen = pygame.display.set_mode((800, 600))
 background = pygame.image.load('background.png')
 
 # Sound
-mixer.music.load("background.wav")
-mixer.music.play(-1)
+#mixer.music.load("background.wav")
+#mixer.music.play(-1)
 
 # Caption and Icon
 pygame.display.set_caption("Word Invader")
@@ -166,8 +166,8 @@ while running: # main game loop
                 playerX_change = 5
             if event.key == pygame.K_SPACE:
                 if bullet_state is "ready":
-                    bulletSound = mixer.Sound("laser.wav")
-                    bulletSound.play()
+                    #bulletSound = #mixer.Sound("laser.wav")
+                    #bulletSound.play()
                     # Get the current x cordinate of the spaceship
                     bulletX = playerX
                     fire_bullet(bulletX, bulletY)
@@ -208,8 +208,8 @@ while running: # main game loop
         # Collision
         collision = isCollision(enemyX[i], enemyY[i], bulletX, bulletY)
         if collision:
-            explosionSound = mixer.Sound("explosion.wav")
-            explosionSound.play()
+            #explosionSound = mixer.Sound("explosion.wav")
+            #explosionSound.play()
             bulletY = 480
             bullet_state = "ready"
             hit_count += 1
