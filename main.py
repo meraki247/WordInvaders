@@ -2,13 +2,17 @@ import math
 import random
 
 import pygame
-from pygame import mixer
 
 # Intialize the pygame
 pygame.init()
+screen_info=pygame.display.Info()
+
+#set the width and height of the screen
+size=(width,height)=(int(screen_info.current_w),int(screen_info.current_h))
+screen = pygame.display.set_mode(size)
 
 # create the screen
-screen = pygame.display.set_mode((800, 600))
+#screen = pygame.display.set_mode((800, 600))
 
 # Background
 background = pygame.image.load('background.png')
@@ -228,3 +232,6 @@ while running: # main game loop
 
     player(playerX, playerY)
     pygame.display.update()
+
+if __name__=='__main__':
+    main()
