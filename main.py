@@ -93,19 +93,22 @@ def main_page():
 
     # display title
     title = first_Page.render("Word Invader", True, (255, 255, 255))
-    screen.blit(title, (185, 185))
+    screen.blit(title, (185, 105))
+    #screen.blit(title, (185, 185))
 
     # display description
     description = description_font.render("A game designed to help high school students prepare for the College Board’s SAT", True, (255, 255, 255))
-    screen.blit(description, (100, 260))
+    screen.blit(description, (100, 170))
+    #screen.blit(description, (100, 260))
     description2 = description_font.render("Reading Section by playing a modified version of Space Invaders (1978) to", True, (255, 255, 255))
-    screen.blit(description2, (125, 280))
+    screen.blit(description2, (125, 190))
+    #screen.blit(description2, (125, 280))
     description3 = description_font.render("practice their knowledge of common vocabulary words in said test.", True, (255, 255, 255))
-    screen.blit(description3, (140, 300))
-    
+    screen.blit(description3, (140, 210))
+    #screen.blit(description3, (140, 300))
     # display CTA (call to action)
     draw_text(screen, "press [ENTER] to begin", 25, 390, 365, (220, 220, 220))
-
+    
 showMainScreen = True
 while showMainScreen:
     
